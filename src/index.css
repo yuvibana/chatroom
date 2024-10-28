@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{scroll-behavior: smooth;}
+img{max-width: 100%;}
+button{cursor: pointer;}
+::-webkit-scrollbar {width: 8px;height: 8px;transition: all 0.9s ease;}
+::-webkit-scrollbar-track {background: #f1f1f1;}
+::-webkit-scrollbar-thumb {background: #888;}
+::-webkit-scrollbar-thumb:hover {background: #ddd;}
+.message{max-height: 75%; min-height: calc(100% - 100px); padding-bottom: 20px;
+    .owner{flex-direction: row-reverse;
+        .mesage_info_in{border-radius: 5px 0 5px 5px; background: #8884c7; }
+        .messageContent{ display: flex; flex-direction: column; align-items: flex-end;}
+    }
+    .mesage_info_in{border-radius: 0 5px 5px 5px; max-width: max-content;}
+}
